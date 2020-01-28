@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Star Wars</title>
+</head>
+
+<body>
+    <header>
+        <h1>Star Wars</h1>
+        <menu>
+            <div><button id="people" type="button" class="btn btn-info">Personnages</button></div>
+            <div><button id="planets" type="button" class="btn btn-info">Planètes</button></div>
+            <div><button id="search" type="button" class="btn btn-info">Recherche</button></div>
+        </menu>
+    </header>
+    <main>
+        <section>
+            <table id="listPeoples"></table>
+        </section>
+        <section id="showpeople" class="mask">
+            <div id="detailPeople"></div>
+            <menu>
+                <div><button id="backpeople" type="button" class="btn btn-info">Précédant</button></div>
+                <div><button id="nextpeople" type="button" class="btn btn-info">Suivant</button></div>
+            </menu>
+        </section>
+        <section>
+            <table id="listPlanets"></table>
+        </section>
+        <section id="showplanet" class="mask">
+            <div id="detailPlanet"></div>
+            <menu>
+                <div><button id="backplanet" type="button" class="btn btn-info">Précédant</button></div>
+                <div><button id="nextplanet" type="button" class="btn btn-info">Suivant</button></div>
+            </menu>
+        </section>
+    </main>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
