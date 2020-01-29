@@ -14,37 +14,43 @@
     <header>
         <h1>Star Wars</h1>
         <menu>
+            <div><button id="home" type="button" class="btn btn-info">Home</button></div>
             <div><button id="people" type="button" class="btn btn-info">Personnages</button></div>
             <div><button id="planets" type="button" class="btn btn-info">Planètes</button></div>
-            <div><button id="search" type="button" class="btn btn-info">Recherche</button></div>
+            <div class="form-inline my-2 my-lg-0">
+                <input id="idsearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="search" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
         </menu>
     </header>
     <main>
-        <section>
-            <table id="listPeoples"></table>
-        </section>
-        <section id="showpeople" class="mask">
-            <div id="detailPeople"></div>
-            <menu>
+        <section id="sectionpeople" class="mask">
+            <menu id="menuPeople">
                 <div><button id="backpeople" type="button" class="btn btn-info">Précédant</button></div>
                 <div><button id="nextpeople" type="button" class="btn btn-info">Suivant</button></div>
             </menu>
+            <table id="listPeoples"></table>
         </section>
-        <section>
-            <table id="listPlanets"></table>
+        <section id="showpeople">
+            <div id="detailPeople"></div>
         </section>
-        <section id="showplanet" class="mask">
-            <div id="detailPlanet"></div>
-            <menu>
+        <section id="sectionplanet" class="mask">
+            <menu id="menuPlanet">
                 <div><button id="backplanet" type="button" class="btn btn-info">Précédant</button></div>
                 <div><button id="nextplanet" type="button" class="btn btn-info">Suivant</button></div>
             </menu>
+            <table id="listPlanets"></table>
+        </section>
+        <section id="showplanet">
+            <div id="detailPlanet"></div>
         </section>
     </main>
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/peoples.js"></script>
+    <script src="./js/planets.js"></script>
 </body>
 
 </html>

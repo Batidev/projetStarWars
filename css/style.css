@@ -5,6 +5,7 @@
 
 body {
     background-image: url(../img/fondStarWars.jpg);
+    background-size: cover;
     color: aqua;
     font-family: 'star wars';
 }
@@ -27,13 +28,13 @@ header {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 80px;
 }
 
 menu {
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    width: 800px;
 }
 
 main {
@@ -52,4 +53,57 @@ section {
     height: 50%;
 }
 
-@media (max-width: 600px) {}
+#sectionpeople {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menuPeople {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#menuPlanet {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    menu {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #sectionpeople {
+        width: 100%;
+    }
+    #showpeople {
+        padding-top: 40px;
+        width: 100%;
+    }
+    #sectionplanet {
+        width: 100%;
+    }
+    #showplanet {
+        padding-top: 40px;
+        width: 100%;
+    }
+}
